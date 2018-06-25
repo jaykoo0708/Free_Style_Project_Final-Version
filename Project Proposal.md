@@ -4,17 +4,17 @@ User Needs Statement Patients with respiratory illness need to check the air qua
 
 
 # As-is Process Description
-Go to Environment & Health Data Portal
-Click Neighborhood report
-Enter a zip code
-Check outdoor Air Quality
-Prepare a mask if air quality is poor
+1. Go to Environment & Health Data Portal
+2. Click Neighborhood report
+3. Enter a zip code
+4. Check outdoor Air Quality
+5. Prepare a mask if air quality is poor
 
 
 # To-be Process Description
-Enter a zip code
-Receive a recommendation as to if he/she needs to wear a mask
-Information Requirements
+1. Enter a zip code
+2. Receive a recommendation as to if he/she needs to wear a mask
+3. Information Requirements
 
 
 # Information Inputs 
