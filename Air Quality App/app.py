@@ -61,9 +61,10 @@ def enterZipCode():
         print("Enter the correct zip code")
         zip_code = input("please enter a zip code: ")
     return zip_code
-# url = "http://api.waqi.info/feed/shanghai/?token=demo"
-# url = "http://aqicn.org/here/"
-# url = "https://api.breezometer.com/baqi/?lat=40.7128&lon=-74.0060&key=5d7391cea8d84309b684d5f16875e5fb"
+
+
+url = f"https://api.breezometer.com/baqi/?lat=40.7128&lon=-74.0060&key={os.environ['AIRNOW_KEY']}"
+
 
 def getDateFromAPI(url):
 
@@ -86,7 +87,9 @@ def run():
         except ValueError:
             print("ENTER THE DATE IN THE RIGHT FORMAT")
 
-    url = f"http://www.airnowapi.org/aq/forecast/zipCode/?format=application/json&zipCode={zip_code}&date={date}&distance=25&API_KEY=57C79EF5-9D49-402F-81BC-84049DE053B8"
+
+    url = f"http://www.airnowapi.org/aq/forecast/zipCode/?format=application/json&zipCode={zip_code}&date={date}&distance=25&API_KEY={os.environ['AIRNOW_KEY']}"
+
 
     # PARSE RESPONSE (AS LONG AS THERE ARE NO ERRORS)
     response = getDateFromAPI(url)
@@ -96,3 +99,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
